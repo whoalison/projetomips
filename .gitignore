@@ -1,0 +1,7 @@
+# Pastas de compilação do Quartus (NÃO commitar)
+db/
+incremental_db/
+output_files/
+
+# Arquivos de backup temporários
+*.bak
