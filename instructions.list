@@ -1,0 +1,29 @@
+// -------------------------------------------------------------------------
+// Arquivo: instructions.list
+// Programa de Teste para Processador MIPS (Código em Binário Pura)
+// Cada linha possui exatamente 32 bits e representa uma instrução.
+// -------------------------------------------------------------------------
+
+// Linha 0 (Endereço de Byte 0): ADD $s1, $s2, $s3
+00000010010100111000100000100000
+
+// Linha 1 (Endereço de Byte 4): SUB $t0, $t1, $t2
+00000001001010100100000000100010
+
+// Linha 2 (Endereço de Byte 8): AND $s0, $t0, $s1
+00000001000100011000000000100100
+
+// Linha 3 (Endereço de Byte 12): OR $t3, $s0, $zero
+00000010000000000101100000100101
+
+// Linha 4 (Endereço de Byte 16): LW $t4, 4($sp)
+10001111101011000000000000000100
+
+// Linha 5 (Endereço de Byte 20): SW $t4, 8($sp)
+10101111101011000000000000001000
+
+// Linha 6 (Endereço de Byte 24): BEQ $s1, $s2, -4 (Desvia de volta se igual)
+00010010010100111111111111111100
+
+// Linha 7 (Endereço de Byte 28): J 0 (Salta para o início do programa)
+00001000000000000000000000000000
