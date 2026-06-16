@@ -39,7 +39,7 @@
 
 set_global_assignment -name FAMILY "Arria II GX"
 set_global_assignment -name DEVICE AUTO
-set_global_assignment -name TOP_LEVEL_ENTITY sign_extend
+set_global_assignment -name TOP_LEVEL_ENTITY d_mem
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 20.1.0
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "17:12:46  JUNE 15, 2026"
 set_global_assignment -name LAST_QUARTUS_VERSION "20.1.0 Lite Edition"
@@ -49,6 +49,7 @@ set_global_assignment -name VERILOG_FILE control.v
 set_global_assignment -name VERILOG_FILE regfile.v
 set_global_assignment -name VERILOG_FILE ula_ctrl.v
 set_global_assignment -name VERILOG_FILE sign_extend.v
+set_global_assignment -name VERILOG_FILE d_mem.v
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
