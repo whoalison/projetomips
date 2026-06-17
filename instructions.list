@@ -1,29 +1,193 @@
-// -------------------------------------------------------------------------
-// Arquivo: instructions.list
-// Programa de Teste para Processador MIPS (Código em Binário Pura)
-// Cada linha possui exatamente 32 bits e representa uma instrução.
-// -------------------------------------------------------------------------
+// Codigo binario teste enviado pelo professor para executar instrucoes dentro do projeto. ps : cada linha representa PC+4 
 
-// Linha 0 (Endereço de Byte 0): ADD $s1, $s2, $s3
-00000010010100111000100000100000
+// Linha 0 (Byte 0): LUI $at, 15 (Carrega 15 na parte superior de $at)
+00111100000000010000000000001111
 
-// Linha 1 (Endereço de Byte 4): SUB $t0, $t1, $t2
-00000001001010100100000000100010
+// Linha 1 (Byte 4): ORI $at, $at, 40960 (Faz um OR imediato em $at)
+00110100001000011010000000000000
 
-// Linha 2 (Endereço de Byte 8): AND $s0, $t0, $s1
-00000001000100011000000000100100
+// Linha 2 (Byte 8): ADD $t9, $zero, $at (Copia $at para $t9)
+00000000000000011100100000100000
 
-// Linha 3 (Endereço de Byte 12): OR $t3, $s0, $zero
-00000010000000000101100000100101
+// Linha 3 (Byte 12): ADDIU $t9, $t9, 1 (Incrementa $t9 em 1)
+00100011001110010000000000000001
 
-// Linha 4 (Endereço de Byte 16): LW $t4, 4($sp)
-10001111101011000000000000000100
+// Linha 4 (Byte 16): ADDI $t0, $zero, 20 (Inicializa $t0 = 20)
+00100000000100000000000000010100
 
-// Linha 5 (Endereço de Byte 20): SW $t4, 8($sp)
-10101111101011000000000000001000
+// Linha 5 (Byte 20): ADDI $t1, $zero, 15 (Inicializa $t1 = 15)
+00100000000100010000000000001111
 
-// Linha 6 (Endereço de Byte 24): BEQ $s1, $s2, -4 (Desvia de volta se igual)
-00010010010100111111111111111100
+// Linha 6 (Byte 24): ADD $t2, $t0, $t1 (Soma: $t2 = $t0 + $t1)
+00000010000100010100000000100000
 
-// Linha 7 (Endereço de Byte 28): J 0 (Salta para o início do programa)
-00001000000000000000000000000000
+// Linha 7 (Byte 28): SUB $t1, $t0, $t1 (Subtração: $t1 = $t0 - $t1)
+00000010000100010100100000100010
+
+// Linha 8 (Byte 32): ADDI $t2, $zero, 20 (Define $t2 = 20)
+00100010000010100000000000010100
+
+// Linha 9 (Byte 36): AND $t3, $t0, $t1 (E lógico: $t3 = $t0 & $t1)
+00000010000100010101100000100100
+
+// Linha 10 (Byte 40): OR $t4, $t0, $t1 (OU lógico: $t4 = $t0 | $t1)
+00000010000100010110000000100101
+
+// Linha 11 (Byte 44): XOR $t5, $t0, $t1 (OU Exclusivo: $t5 = $t0 ^ $t1)
+00000010000100010110100000100110
+
+// Linha 12 (Byte 48): NOR $t6, $t0, $t1 (NÃO OU lógico: $t6 = ~($t0 | $t1))
+00000010000100010111000000100111
+
+// Linha 13 (Byte 52): ADDIU $t9, $t9, 1 (Incrementa $t9)
+00100011001110010000000000000001
+
+// Linha 14 (Byte 56): ADDI $t0, $zero, 5 (Define $t0 = 5)
+00100000000100000000000000000101
+
+// Linha 15 (Byte 60): ADDI $t1, $zero, 20 (Define $t1 = 20)
+00100000000100010000000000010100
+
+// Linha 16 (Byte 64): SLL $s0, $t0, 2 (Desloca $t0 à esquerda por 2 -> $s0 = $t0 * 4)
+00000000000100001000000010000000
+
+// Linha 17 (Byte 68): BEQ $t0, $t1, -2 (Loop: se $t0 == $t1, volta para a Linha 16)
+00010010000100011111111111111110
+
+// Linha 18 (Byte 72): ADDIU $t9, $t9, 1 (Incrementa $t9)
+00100011001110010000000000000001
+
+// Linha 19 (Byte 76): ADDI $t0, $zero, 5 (Define $t0 = 5)
+00100000000100000000000000000101
+
+// Linha 20 (Byte 80): ADDI $t1, $zero, 80 (Define $t1 = 80)
+00100000000100010000000001010000
+
+// Linha 21 (Byte 84): ADDI $t0, $zero, 2 (Define $t0 = 2)
+00100000000010000000000000000010
+
+// Linha 22 (Byte 88): SLLV $s0, $t1, $t0 (Desloca $t1 à esquerda pelo valor em $t0)
+00000001000100001000000000000100
+
+// Linha 23 (Byte 92): BNE $t0, $t1, -2 (Loop: se $t0 != $t1, volta para a Linha 22)
+00010110000100011111111111111110
+
+// Linha 24 (Byte 96): ADDIU $t9, $t9, 1 (Incrementa $t9)
+00100011001110010000000000000001
+
+// Linha 25 (Byte 100): ADDI $t0, $zero, -2 (Define $t0 = -2)
+00100000000100001111111111111110
+
+// Linha 26 (Byte 104): ADDI $t1, $zero, -8 (Define $t1 = -8)
+00100000000100011111111111111000
+
+// Linha 27 (Byte 108): SRAV $s0, $t1, $t1 (Deslocamento aritmético à direita)
+00000000000100011000100001000011
+
+// Linha 28 (Byte 112): SLT $s0, $t0, $t1 (Define $s0 = 1 se $t0 < $t1, senão 0)
+00000010000100010100000000101010
+
+// Linha 29 (Byte 116): BEQ $t0, $zero, -3 (Se $t0 == 0, volta 3 instruções)
+00010001000000001111111111111101
+
+// Linha 30 (Byte 120): ADDIU $t9, $t9, 1 (Incrementa $t9)
+00100011001110010000000000000001
+
+// Linha 31 (Byte 124): ADDI $t6, $zero, 12 (Define $t6 = 12)
+00100000000101100000000000001100
+
+// Linha 32 (Byte 128): ADDI $t7, $zero, 40 (Define $t7 = 40)
+00100000000101110000000000101000
+
+// Linha 33 (Byte 132): ADDI $t0, $zero, 10 (Define $t0 = 10)
+00100000000100000000000000001010
+
+// Linha 34 (Byte 136): ADDI $t1, $zero, 20 (Define $t1 = 20)
+00100000000100010000000000010100
+
+// Linha 35 (Byte 140): ADDI $t2, $zero, 30 (Define $t2 = 30)
+00100000000100100000000000011110
+
+// Linha 36 (Byte 144): ADDI $t3, $zero, 40 (Define $t3 = 40)
+00100000000100110000000000101000
+
+// Linha 37 (Byte 148): SW $t0, 0($t6) (Salva $t0 na memória no endereço de $t6 + 0)
+10101110110100000000000000000000
+
+// Linha 38 (Byte 152): SW $t1, 4($t6) (Salva $t1 na memória no endereço de $t6 + 4)
+10101110110100010000000000000100
+
+// Linha 39 (Byte 156): SW $t2, 8($t7) (Salva $t2 na memória no endereço de $t7 + 8)
+10101110111100100000000000001000
+
+// Linha 40 (Byte 160): SW $t3, 12($t7) (Salva $t3 na memória no endereço de $t7 + 12)
+10101110111100110000000000001100
+
+// Linha 41 (Byte 164): LW $t0, 12($zero) (Carrega de MEM[12] para $t0)
+10001100000010000000000000001100
+
+// Linha 42 (Byte 168): LW $t1, 16($zero) (Carrega de MEM[16] para $t1)
+10001100000010010000000000010000
+
+// Linha 43 (Byte 172): ADD $s3, $t0, $t1 (Soma os valores carregados: $s3 = $t0 + $t1)
+00000001000010010101100000100000
+
+// Linha 44 (Byte 176): LW $t0, 48($zero) (Carrega de MEM[48] para $t0)
+10001100000010000000000000110000
+
+// Linha 45 (Byte 180): LW $t1, 52($zero) (Carrega de MEM[52] para $t1)
+10001100000010010000000000110100
+
+// Linha 46 (Byte 184): ADD $s4, $t0, $t1 (Soma os valores carregados: $s4 = $t0 + $t1)
+00000001000010010110000000100000
+
+// Linha 47 (Byte 188): ADD $s0, $t6, $t4 (Soma: $s0 = $t6 + $t4)
+00000001011011000100000000100000
+
+// Linha 48 (Byte 192): ADDIU $t9, $t9, 1 (Incrementa $t9)
+00100011001110010000000000000001
+
+// Linha 49 (Byte 196): J 54 (Salta para a Linha 54 / Byte 216)
+00001000000000000000000000110110
+
+// Linha 50 (Byte 200): ADDI $t0, $zero, -1 (Instrução pulada pelo Jump anterior)
+00100000000010001111111111111111
+
+// Linha 51 (Byte 204): ADDI $t0, $zero, -2
+00100000000010001111111111111110
+
+// Linha 52 (Byte 208): ADDI $t0, $zero, -3
+00100000000010001111111111111101
+
+// Linha 53 (Byte 212): ADDI $t0, $zero, -4
+00100000000010001111111111111100
+
+// Linha 54 (Byte 216): ADDI $t0, $zero, 1 (Destino do Jump da Linha 49)
+00100000000010000000000000000001
+
+// Linha 55 (Byte 220): ADDIU $t9, $t9, 1 (Incrementa $t9)
+00100011001110010000000000000001
+
+// Linha 56 (Byte 224): JAL 62 (Salta salvando o endereço de retorno em $ra -> Vai para a Linha 62 / Byte 248)
+00001100000000000000000000111110
+
+// Linha 57 (Byte 228): ADDI $t0, $zero, -1 (Destino de retorno após a Linha 63)
+00100000000010001111111111111111
+
+// Linha 58 (Byte 232): ADDI $t0, $zero, -2
+00100000000010001111111111111110
+
+// Linha 59 (Byte 236): ADDI $t0, $zero, -3
+00100000000010001111111111111101
+
+// Linha 60 (Byte 240): ADDI $t0, $zero, -4
+00100000000010001111111111111100
+
+// Linha 61 (Byte 244): J 64 (Salta para o fim do programa para evitar reexecução)
+00001000000000000000000001000000
+
+// Linha 62 (Byte 248): ADD $s0, $zero, $ra (Destino do JAL: Copia o endereço de retorno para $s0)
+00000000000111110100000000100000
+
+// Linha 63 (Byte 252): JR $ra (Salto de Registrador: retorna para a instrução na Linha 57)
+00000011111000000000000000001000
