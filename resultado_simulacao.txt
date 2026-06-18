@@ -1,0 +1,86 @@
+WARNING: i_mem.v:30: $readmemb(instructions.list): Not enough words in the file for the requested range [0:255].
+VCD info: dumpfile mips_waveform.vcd opened for output.
+Iniciando Simulação...
+Time:   15 | PC: 00000000 | Instr: 3c01000f | ULA: 0000000f | Mem: 00000000
+Time:   25 | PC: 00000004 | Instr: 3421a000 | ULA: 000fa000 | Mem: 00000000
+Time:   35 | PC: 00000008 | Instr: 0001c820 | ULA: 000fa000 | Mem: 00000000
+Time:   45 | PC: 0000000c | Instr: 23390001 | ULA: 000fa001 | Mem: 00000000
+Time:   55 | PC: 00000010 | Instr: 20100014 | ULA: 00000014 | Mem: 00000000
+Time:   65 | PC: 00000014 | Instr: 2011000f | ULA: 0000000f | Mem: 00000000
+Time:   75 | PC: 00000018 | Instr: 02114020 | ULA: 00000023 | Mem: 00000000
+Time:   85 | PC: 0000001c | Instr: 02114822 | ULA: 00000005 | Mem: 00000000
+Time:   95 | PC: 00000020 | Instr: 220a0014 | ULA: 00000028 | Mem: 00000000
+Time:  105 | PC: 00000024 | Instr: 02115824 | ULA: 00000004 | Mem: 00000000
+Time:  115 | PC: 00000028 | Instr: 02116025 | ULA: 0000001f | Mem: 00000000
+Time:  125 | PC: 0000002c | Instr: 02116826 | ULA: 0000001b | Mem: 00000000
+Time:  135 | PC: 00000030 | Instr: 02117027 | ULA: ffffffe0 | Mem: 00000000
+Time:  145 | PC: 00000034 | Instr: 23390001 | ULA: 000fa002 | Mem: 00000000
+Time:  155 | PC: 00000038 | Instr: 20100005 | ULA: 00000005 | Mem: 00000000
+Time:  165 | PC: 0000003c | Instr: 20110014 | ULA: 00000014 | Mem: 00000000
+Time:  175 | PC: 00000040 | Instr: 00108080 | ULA: 00000014 | Mem: 00000000
+Time:  185 | PC: 00000044 | Instr: 1211fffe | ULA: 00000000 | Mem: 00000000
+Time:  195 | PC: 00000040 | Instr: 00108080 | ULA: 00000050 | Mem: 00000000
+Time:  205 | PC: 00000044 | Instr: 1211fffe | ULA: 0000003c | Mem: 00000000
+Time:  215 | PC: 00000048 | Instr: 23390001 | ULA: 000fa003 | Mem: 00000000
+Time:  225 | PC: 0000004c | Instr: 20100005 | ULA: 00000005 | Mem: 00000000
+Time:  235 | PC: 00000050 | Instr: 20110050 | ULA: 00000050 | Mem: 00000000
+Time:  245 | PC: 00000054 | Instr: 20080002 | ULA: 00000002 | Mem: 00000000
+Time:  255 | PC: 00000058 | Instr: 01108004 | ULA: 00000014 | Mem: 00000000
+Time:  265 | PC: 0000005c | Instr: 1611fffe | ULA: ffffffc4 | Mem: 00000000
+Time:  275 | PC: 00000058 | Instr: 01108004 | ULA: 00000050 | Mem: 00000000
+Time:  285 | PC: 0000005c | Instr: 1611fffe | ULA: 00000000 | Mem: 00000000
+Time:  295 | PC: 00000060 | Instr: 23390001 | ULA: 000fa004 | Mem: 00000000
+Time:  305 | PC: 00000064 | Instr: 2010fffe | ULA: fffffffe | Mem: 00000000
+Time:  315 | PC: 00000068 | Instr: 2011fff8 | ULA: fffffff8 | Mem: 00000000
+Time:  325 | PC: 0000006c | Instr: 00118843 | ULA: fffffffc | Mem: 00000000
+Time:  335 | PC: 00000070 | Instr: 0211402a | ULA: 00000000 | Mem: 00000000
+Time:  345 | PC: 00000074 | Instr: 1100fffd | ULA: 00000000 | Mem: 00000000
+Time:  355 | PC: 0000006c | Instr: 00118843 | ULA: fffffffe | Mem: 00000000
+Time:  365 | PC: 00000070 | Instr: 0211402a | ULA: 00000000 | Mem: 00000000
+Time:  375 | PC: 00000074 | Instr: 1100fffd | ULA: 00000000 | Mem: 00000000
+Time:  385 | PC: 0000006c | Instr: 00118843 | ULA: ffffffff | Mem: 00000000
+Time:  395 | PC: 00000070 | Instr: 0211402a | ULA: 00000001 | Mem: 00000000
+Time:  405 | PC: 00000074 | Instr: 1100fffd | ULA: 00000001 | Mem: 00000000
+Time:  415 | PC: 00000078 | Instr: 23390001 | ULA: 000fa005 | Mem: 00000000
+Time:  425 | PC: 0000007c | Instr: 2016000c | ULA: 0000000c | Mem: 00000000
+Time:  435 | PC: 00000080 | Instr: 20170028 | ULA: 00000028 | Mem: 00000000
+Time:  445 | PC: 00000084 | Instr: 2010000a | ULA: 0000000a | Mem: 00000000
+Time:  455 | PC: 00000088 | Instr: 20110014 | ULA: 00000014 | Mem: 00000000
+Time:  465 | PC: 0000008c | Instr: 2012001e | ULA: 0000001e | Mem: 00000000
+Time:  475 | PC: 00000090 | Instr: 20130028 | ULA: 00000028 | Mem: 00000000
+Time:  485 | PC: 00000094 | Instr: aed00000 | ULA: 0000000c | Mem: 00000000 | [MEM WRITE] Escreveu 0000000a no end. 0000000c
+Time:  495 | PC: 00000098 | Instr: aed10004 | ULA: 00000010 | Mem: 00000000 | [MEM WRITE] Escreveu 00000014 no end. 00000010
+Time:  505 | PC: 0000009c | Instr: aef20008 | ULA: 00000030 | Mem: 00000000 | [MEM WRITE] Escreveu 0000001e no end. 00000030
+Time:  515 | PC: 000000a0 | Instr: aef3000c | ULA: 00000034 | Mem: 00000000 | [MEM WRITE] Escreveu 00000028 no end. 00000034
+Time:  525 | PC: 000000a4 | Instr: 8c08000c | ULA: 0000000c | Mem: 0000000a | [MEM READ] Leu 0000000a do end. 0000000c
+Time:  535 | PC: 000000a8 | Instr: 8c090010 | ULA: 00000010 | Mem: 00000014 | [MEM READ] Leu 00000014 do end. 00000010
+Time:  545 | PC: 000000ac | Instr: 01095820 | ULA: 0000001e | Mem: 00000000
+Time:  555 | PC: 000000b0 | Instr: 8c080030 | ULA: 00000030 | Mem: 0000001e | [MEM READ] Leu 0000001e do end. 00000030
+Time:  565 | PC: 000000b4 | Instr: 8c090034 | ULA: 00000034 | Mem: 00000028 | [MEM READ] Leu 00000028 do end. 00000034
+Time:  575 | PC: 000000b8 | Instr: 01096020 | ULA: 00000046 | Mem: 00000000
+Time:  585 | PC: 000000bc | Instr: 016c4020 | ULA: 00000064 | Mem: 00000000
+Time:  595 | PC: 000000c0 | Instr: 23390001 | ULA: 000fa006 | Mem: 00000000
+Time:  605 | PC: 000000c4 | Instr: 08000036 | ULA: 00000000 | Mem: 00000000
+Time:  615 | PC: 000000d8 | Instr: 20080001 | ULA: 00000001 | Mem: 00000000
+Time:  625 | PC: 000000dc | Instr: 23390001 | ULA: 000fa007 | Mem: 00000000
+Time:  635 | PC: 000000e0 | Instr: 0c00003e | ULA: 00000000 | Mem: 00000000
+Time:  645 | PC: 000000f8 | Instr: 001f4020 | ULA: 000000e4 | Mem: 00000000
+Time:  655 | PC: 000000fc | Instr: 03e00008 | ULA: 000000e4 | Mem: 00000000
+Time:  665 | PC: 000000e4 | Instr: 2008ffff | ULA: ffffffff | Mem: 00000000
+Time:  675 | PC: 000000e8 | Instr: 2008fffe | ULA: fffffffe | Mem: 00000000
+Time:  685 | PC: 000000ec | Instr: 2008fffd | ULA: fffffffd | Mem: 00000000
+Time:  695 | PC: 000000f0 | Instr: 2008fffc | ULA: fffffffc | Mem: 00000000
+Time:  705 | PC: 000000f4 | Instr: 08000040 | ULA: 00000000 | Mem: 00000000
+Time:  715 | PC: 00000100 | Instr: 00000000 | ULA: 00000000 | Mem: 00000000
+Time:  725 | PC: 00000104 | Instr: 00000000 | ULA: 00000000 | Mem: 00000000
+Time:  735 | PC: 00000108 | Instr: 00000000 | ULA: 00000000 | Mem: 00000000
+Time:  745 | PC: 0000010c | Instr: 00000000 | ULA: 00000000 | Mem: 00000000
+Time:  755 | PC: 00000110 | Instr: 00000000 | ULA: 00000000 | Mem: 00000000
+Time:  765 | PC: 00000114 | Instr: 00000000 | ULA: 00000000 | Mem: 00000000
+Time:  775 | PC: 00000118 | Instr: 00000000 | ULA: 00000000 | Mem: 00000000
+Time:  785 | PC: 0000011c | Instr: 00000000 | ULA: 00000000 | Mem: 00000000
+Time:  795 | PC: 00000120 | Instr: 00000000 | ULA: 00000000 | Mem: 00000000
+Time:  805 | PC: 00000124 | Instr: 00000000 | ULA: 00000000 | Mem: 00000000
+---------------------------------------------------------
+Simulacao finalizada.
+testbench.v:51: $finish called at 810 (1s)
