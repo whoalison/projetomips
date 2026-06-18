@@ -16,7 +16,7 @@ module mips(
   output [31:0] MemOut
 );
   // Fios de interconexão
-  wire [31:0] PC, nextPC, instruction;
+  wire [31:0] pc, nextpc, instruction;
   wire [31:0] read_data1, read_data2, write_data;
   wire [31:0] sign_ext_out, alu_in2, dmem_out;
   wire RegDst, Jump, Branch, MemRead, MemtoReg, MemWrite, ALUSrc, RegWrite, Jr, ExtOp, JalEn, LuiEn;
@@ -26,7 +26,7 @@ module mips(
 
   // Contador de Programa (PC)
   pc pc_inst(.clock(clock), .reset(reset), .nextpc(nextpc), .pc(pc));
-  assign PCOut = PC;
+  assign PCOut = pc;
   
   // Memoria de Instrução
   i_mem imem(.address(pc), .i_out(instruction));
